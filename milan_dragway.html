@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Porsche 928: The German Landshark</title>
+		
+	<!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+	<!--[if lt IE 9]>
+    	<script>
+    		var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+    		var len = elementsArray.length;
+    		for(i = 0; i < len; i++){
+    			document.createElement(elementsArray[i]);
+    		}
+    	</script>
+	<![endif]-->
+
+	<!--CSS style sheet goes here-->
+	<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css' >
+	<link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+	<div id="wrapper">
+    <header>
+      <h1>BIG DAVE'S 928 Page<span>The Porsche 928: The German Landshark</span></h1>
+	  
+    </header>
+    <nav>
+      <ul>
+        <li><a href= "index.html">Home</a></li>
+        <li><span class="clicked">Detroit 928 Owners and Events</span></li>
+        <li><a href="timingBelt.html">Timing Belt Catastrophe</a></li>
+        <li><a href="other.html">Other Websites</a></li>
+        <li><a href="vendors.html">928 Vendors</a></li>
+       
+      </ul>
+    </nav>
+	<nav id="second_nav">
+      <ul>
+        <li><a href="owners&events.html">Club Meetings</a></li>
+        <li><span id="clicked">928 Night at Milan Dragway</span></li>
+        <li><a href="928weissach.html">The 928 Weissach Edition</a></li>
+        <li><a href="mountains.html">Sharks in the Mountains</a></li>
+        <li><a href="hell.html">Sharks in Hell</a></li>
+		<li><a href="kart.html">Night at Kart2Kart</a></li>
+        <li><a href="munk.html">Tech Sessions at Munk's Motors</a></li>
+        <li><a href="cruise.html">Woodward Dream Cruise</a></li>
+        <li><a href="frenzy.html">2003 Fresh Water Shark Frezny</a></li>
+        <li><a href="autox.html">Autocrossing the 928</a></li>
+       
+      </ul>
+    </nav>
+    <main>
+     <h2>Drag Racing at Milan Speedway</h2>
+     <p id="text">Robert Budd, owner of an incredible 928 with a Corvette motor conversion, arranged for our group to spend an evening at the Milan Dragway. Everyone had an opportunity to run their 928s down the strip as many times as we dared. Rob's car had the quickest 928 time of the night. </p>
+	 
+	 <p style="text-align:center">Click on a thumbnail to see the full image in the box below.</p>
+     <div id="images">
+	   <img src="images/milan-001.jpg" alt="milan 1" height="450" width="600">
+       <img src="images/milan-002.jpg" alt="milan 2" height="450" width="600">
+       <img src="images/milan-003.jpg" alt="milan 3" height="450" width="600">
+       <img src="images/milan-004.jpg" alt="milan 4" height="450" width="600">
+       <img src="images/milan-005.jpg" alt="milan 5" height="450" width="600">
+	   <img src="images/milan-006.jpg" alt="milan 6" height="450" width="600">
+	   <img src="images/milan-007.jpg" alt="milan 7" height="450" width="600">
+	   <img src="images/milan-008.jpg" alt="milan 8" height="450" width="600">
+	   <img src="images/milan-009.jpg" alt="milan 9" height="450" width="600">
+	   <img src="images/milan-010.jpg" alt="milan 10" height="450" width="600">
+	  
+     </div><!-- end images -->
+     <div id="display-image">
+       <p>Selected image will appear here</p>
+     </div>
+	 
+    </main>
+    <footer>
+      <p>David Kocab &copy; 2018</p>
+    </footer>
+  </div><!--end wrapper-->
+  
+   <script>
+//<![CDATA[
+  document.getElementById('images').onclick = function(e){
+    e = e || window.event;
+    document.getElementById('display-image').innerHTML = '<img src="'+e.target.getAttribute("src")+'" width="900" height="600" alt="full image" />';
+  };
+//]]></script>
+  
+  
+  </body>
+</html>
